@@ -29,10 +29,5 @@ for (let p=0; p < pronoun.length ; p++){
   }
  }
 
-const amountOfVars = pronoun.length * adj.length * noun.length * ending.length;
-
-
-const finalDomain = arr[Math.floor(Math.random() * amountOfVars)];
-
- document.getElementById("domainResult").innerHTML = finalDomain;
+ document.getElementById("domainResult").innerHTML = arr.join(`<br>`);
 }
